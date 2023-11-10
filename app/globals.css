@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to bottom right, rgba(0, 0, 32, 0.938), rgb(21, 20, 39), rgb(16, 17, 41));
+}
+form{
+  background: linear-gradient(to bottom left, rgba(14, 42, 95, 0.575), rgba(53, 49, 124, 0.486), rgba(54, 55, 95, 0.514));
+}
+form label{
+  padding: 10px 0;
+}
+form input{
+  background-color: rgba(255, 255, 255, 0.267);
+  padding: 5px;
+  border-radius: 10px;
+}
+form button{
+  background-color: rgba(92, 108, 255, 0.671) !important;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all .1s ease;
+}
+form button:hover{
+  opacity: .7;
+}
+form button:active{
+  opacity: .5;
+}
+.divtable{
+  background: linear-gradient(to bottom right, rgb(0, 0, 32), rgb(3, 3, 5), rgb(6, 7, 19));
+  color: gray;
+  display: grid;
+  justify-items: center;
+}
+.divhead, .divbody{
+  width: 100%;
+}
+.divhead, .divrow{
+  display: grid;
+  grid-template-columns: 10% 20% 30% 20% 20%;
+  padding: 15px 0;
+  justify-items: center;
+  align-items: center;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+.buttons button{
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  margin: 5px 0;
+}
+.buttons button:hover{
+  opacity: .7;
+}
+.buttons button:active{
+  opacity: .5;
+}
+.delete{
+  background: linear-gradient(to bottom left, rgb(92, 0, 0), rgba(221, 0, 0, 0.329));
+}
+.update{
+  background: linear-gradient(to bottom left, rgb(0, 3, 155),rgba(47, 90, 146, 0.329));
+}
